@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/4bd347a694.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        .nav-link {
+            color: black;
+        }
+        .background{
+            background: #3b2b84;
+            opacity: .6;
+            position: absolute;
+            z-index: 0;
+        }
+        html, body{
+            height: 100%;
+        }
+        .my-background-color{
+            background: #3b2b84;
+        }
+        .my-text-color{
+            color:#3b2b84;
+        }
+
+        /*First Box*/
+        .first{
+            background: url('Images/speaker.jpg');
+            background-size: cover;
+            height : 100%;
+            position: relative;
+        }
+        .heading{
+            top: 15%;
+        }
+        .heading h3{
+            font-size: 2.3rem;
+        }
+        .heading button{
+            font-size: 1.2rem;
+        }
+
+        /*Second Box*/
+        .second h4{
+            line-height: 1.5;
+        }
+
+        /*four*/
+        .event-schedule-day{
+            font-weight: bold;
+        }
+
+       
+       /*Mobile CSS*/
+        @media only screen and (max-width: 600px) {
+            .navbar-absolute{
+                width : 90%;
+                position: absolute; 
+                left: 50%;
+                transform: translateX(-50%);
+                top:100%;
+                z-index: 11;
+            }
+        }
+
+        /*Laptop CSS*/
+        @media only screen and (min-width: 600px) {
+            .second .image-side{
+                width: 170%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class = "navbar navbar-expand-md bg-white fixed-top shadow">
+        <a class = "navbar-brand my-text-color " href = "#">
+            Event
+        </a>
+        <button class = "navbar-toggler" type = "button" data-target = "#collapsibleNavbar" data-toggle = "collapse">
+            <span class = "fas fa-hamburger"></span>
+        </button>
+
+        <div class = "collapse navbar-collapse bg-white navbar-absolute rounded-bottom pl-3 pr-3 justify-content-center justify-content-md-end" id = "collapsibleNavbar">
+            <ul class = "navbar-nav text-dark">
+                <li class = "nav-item pl-4 ">
+                    <a class = "nav-link" href = "#first">Home</a>
+                </li>
+                <li class = "nav-item pl-4">
+                    <a class = "nav-link" href = "#second">About</a>
+                </li>
+                <li class = "nav-item pl-4">
+                    <a class = "nav-link" href = "#third">Speaker</a>
+                </li>
+                <li class = "nav-item pl-4">
+                    <a class = "nav-link" href = "#four">Schedule</a>
+                </li>
+                <!--<li class = "nav-item">
+                    <div class = "d-flex justify-content-between d-md-none">
+                        <a class = "nav-link ">Blog</a>
+
+                        <button class = "navbar-toggler  align-self-center" type = "button" data-target = "#subcollapsibleNavbar" data-toggle = "collapse">
+                            <span class = "fas fa-plus"></span>
+                        </button>
+
+                        
+                    </div>
+
+                    <div class = "collapse navbar-collapse ml-4 m-md-0" id = "subcollapsibleNavbar">
+                            <ul class = "navbar-nav">
+                                <li class = "nav-item">
+                                    <a class = "nav-link">Blog</a>
+                                </li>
+                                 <li class = "nav-item">
+                                    <a class = "nav-link">Blog Details</a>
+                                </li>
+                                 <li class = "nav-item">
+                                    <a class = "nav-link">Element</a>
+                                </li>
+                            </ul>
+                    </div>
+                </li>-->
+                <li class = "nav-item pl-4 pr-4">
+                    <a class = "nav-link" href = "#five">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--First Section-->
+    <div class = "first mb-5" id = "first">
+        <div class = "background h-100 w-100"></div>
+        <div class = "pl-3 pl-md-5 pr-5 pt-5 text-white heading"  style= "z-index: 10;position: relative;">
+            <h6 class = "mb-4 mt-5">
+                --- COMMITED TO SUCCESS
+            </h6>
+            <h3>
+                Digital Conference for Designers
+            </h3>
+            <button class = "btn btn-light pl-5 pr-5 pl-md-5 pr-md-5 pt-md-3 pb-md-3  mt-5 my-text-color">
+                Register
+            </button>
+        </div>
+    </div>
+    <!--End of First Section-->
+
+
+    <!--Second Section-->
+    <div class = "second pl-3 pr-3 mt-5" id = "second">
+        
+
+        <div class = "d-md-flex w-100">
+
+            <!--text-side-->
+            <div class= "text-side">
+                <h4 class = "mb-5">
+                    The Biggest Digital Conference
+                </h4>
+
+                <div class = "mb-4">
+                    There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.rere arge many variations ohf passages of sorem gpsum ilable.
+                </div>
+            
+                <div class = "mb-5">
+                    There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in.
+                </div>
+
+                <div class = "event-info mb-3">
+
+                    <div class = "d-flex mb-4">
+                        <span class = "fas fa-map-marker-alt align-self-center fa-2x my-text-color"></span>
+                        <div class = "ml-5 ">
+                            <h5 class = "mb-0">Where</h5 >
+                            <div>SU Site, Mahabalipuram</div>
+                        </div>
+                    </div>
+
+                     <div class = "d-flex mb-5">
+                        <span class = "fas fa-calendar-alt align-self-center fa-2x my-text-color"></span>
+                        <div class = "ml-5">
+                            <h5 class = "mb-0">When</h5 >
+                            <div>Nov.21.2020</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class = "btn my-background-color mb-4 text-white pl-4 pr-4">
+                    Get Tickets
+                </button>
+
+            </div>
+            <!--End of text-side-->
+
+            <div class = "image-side mb-4">
+               <img src = "Images/Speaker 2.jpg"  class = "rounded w-100 h-100">
+            </div>
+
+        </div>
+
+    </div>
+    <!--End of Second Section-->
+
+
+    <!--Third Section-->
+    <div class = "third my-background-color mt-5 pl-3 pr-3 pb-5 pb-md-3" id = "third">
+        <h4 class = " pt-5 text-white">
+            Speakers
+        </h4>
+
+        <div class = "d-md-flex">
+            <div class = "speaker-1">
+                <img class = "rounded w-100 h-75 mt-4 pr-md-3" src = "Images/Speaker_No_1.jpg" />
+                <div class = "speaker-about text-center text-white pt-4">
+                    <h5>
+                        JESSICA BROWN
+                    </h5>
+                    <div class = "designation">
+                        Co Founder
+                    </div>
+                </div>
+            </div>
+
+            <div class = "speaker-2">
+                <img class = "rounded w-100 h-75 mt-4 pl-md-3" src = "Images/Speaker_No_2.jpg" />
+                <div class = "speaker-about text-center text-white pt-4">
+                    <h5>
+                        JESSICA BROWN
+                    </h5>
+                    <div class = "designation">
+                        Co Founder
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Third Secction-->
+
+
+    <!--Four Section-->
+    <div class = "four mt-5 pl-4 pr-4" id = "four">
+
+        <h4 class = "text-center">
+            Event Schedule
+        </h4>
+
+        <div class = "row bg-light mt-5 rounded mb-3 justify-content-around">
+            <div class = "col-5 p-3 text-center text-white event-schedule-day my-background-color m-2 day-title" id = "day-1-title" onclick = "show_event_schedule('1')">
+                Day 1
+            </div>
+            <div class = "col-5 p-3 text-center my-text-color event-schedule-day m-2 day-title" id = "day-2-title" onclick = "show_event_schedule('2')">
+                Day 2
+            </div>
+        </div>
+
+        <div class = "mt-5 pl-2 pr-2">
+            
+            <div class = "single-day-schedule" id = "day-1">
+
+                <div class = "single-interval border-bottom mb-4 mb-md-5 pl-2">
+                    <h6 class = "my-text-color font-weight-bolder">
+                        06:30 AM-08:30 AM
+                    </h6>
+                    <div class = "pb-3 pb-md-4">
+                        Morning Devotion
+                    </div>
+                </div>
+                <div class = "single-interval border-bottom mb-4 mb-md-5 pl-2">
+                    <h6 class = "my-text-color font-weight-bolder">
+                        08:30 AM-09:30 AM
+                    </h6>
+                    <div class = "pb-3 pb-md-4">
+                        Snacks
+                    </div>
+                </div>
+            
+            </div>
+            
+        </div>
+
+         <div class = "single-day-schedule d-none" id = "day-2">
+
+                <div class = "single-interval border-bottom mb-4 mb-md-5 pl-2">
+                    <h6 class = "my-text-color font-weight-bolder">
+                        07:00 AM-08:00 AM
+                    </h6>
+                    <div class = "pb-3 pb-md-4">
+                        Morning Devotion
+                    </div>
+                </div>
+                <div class = "single-interval border-bottom mb-4 mb-md-5 pl-2">
+                    <h6 class = "my-text-color font-weight-bolder">
+                        08:30 AM-09:30 AM
+                    </h6>
+                    <div class = "pb-3 pb-md-4">
+                        Snacks
+                    </div>
+                </div>
+            
+            </div>
+            
+        </div>
+
+    </div>
+    <!--End of Four Section-->
+
+    <!--Fifth Section / Footer-->
+    <div class = "fifth mt-5 pl-3 pr-3 text-center pb-5" id = "five" style = "background: #06031e;">
+        <h5 class = "font-weight-bolder pt-5 mb-3 text-white" style="line-height: 1.5;">
+            For more Info<br>
+            Contact
+        </h5>
+        <div class = "contact-info text-light">
+            <div class = "pb-1">
+                Phone: +91 11111 11111
+            </div>
+            <div class = "pb-1">
+                Alternate Phone: +91 11111 22222
+            </div>
+            <div class = "pb-1">
+                Email: xxx@gmail.com
+            </div>
+            
+        </div>
+    </div>
+    <!--End of Fith Section /Footer-->
+
+
+    <script>
+
+        function show_event_schedule(n){
+            $(".single-day-schedule").removeClass("d-none");
+            $(".single-day-schedule").addClass("d-none");
+            $("#day-"+n).removeClass('d-none');
+            $(".day-title").removeClass("my-background-color text-white");
+            $(".day-title").addClass("my-text-color");
+            $("#day-"+n+"-title").addClass("my-background-color text-white");
+        }
+    </script>
+
+</body>
+
+</html>
