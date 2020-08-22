@@ -10,6 +10,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/4bd347a694.js" crossorigin="anonymous"></script>
 
+       
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <title>Camp Registration</title>
         <link  href="Images/Logo.png">
 
@@ -23,7 +26,7 @@
             opacity: .6;
             position: absolute;
             z-index: 0;
-        }
+        }   
         html, body{
             height: 100%;
         }
@@ -146,11 +149,11 @@
     <!--First Section-->
     <div class = "first mb-5" id = "first">
         <div class = "background h-100 w-100"></div>
-        <div class = "pl-3 pl-md-5 pr-5 pt-5 text-white heading"  style= "z-index: 10;position: relative;">
+        <div class = "pl-3 pl-md-5 pr-5 pt-5 text-white heading" data-aos = "fade-right"  style= "z-index: 10;position: relative;">
             <h6 class = "mb-4 mt-5">
                 --- COMMITED TO SUCCESS
             </h6>
-            <h3>
+            <h3 >
                 Digital Conference for Designers
             </h3>
             <button class = "btn btn-light pl-5 pr-5 pl-md-5 pr-md-5 pt-md-3 pb-md-3  mt-5 my-text-color">
@@ -169,19 +172,19 @@
 
             <!--text-side-->
             <div class= "text-side">
-                <h4 class = "mb-5">
+                <h4 class = "mb-5" data-aos = "fade-up">
                     The Biggest Digital Conference
                 </h4>
 
-                <div class = "mb-4">
+                <div class = "mb-4" data-aos = "fade-up">
                     There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.rere arge many variations ohf passages of sorem gpsum ilable.
                 </div>
             
-                <div class = "mb-5">
+                <div class = "mb-5" data-aos = "fade-up">
                     There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in.
                 </div>
 
-                <div class = "event-info mb-3">
+                <div class = "event-info mb-3" data-aos = "fade-up">
 
                     <div class = "d-flex mb-4">
                         <span class = "fas fa-map-marker-alt align-self-center fa-2x my-text-color"></span>
@@ -209,7 +212,7 @@
             <!--End of text-side-->
 
             <div class = "image-side mb-4">
-               <img src = "Images/Speaker 2.jpg"  class = "rounded w-100 h-100">
+               <img src = "Images/Speaker 2.jpg"  data-aos = "fade-up" class = "rounded w-100 h-100">
             </div>
 
         </div>
@@ -220,14 +223,14 @@
 
     <!--Third Section-->
     <div class = "third my-background-color mt-5 pl-3 pr-3 pb-5 pb-md-3" id = "third">
-        <h4 class = " pt-5 text-white">
+        <h4 class = " pt-5 text-white" data-aos = "fade-up">
             Speakers
         </h4>
 
         <div class = "d-md-flex">
             <div class = "speaker-1">
-                <img class = "rounded w-100 h-75 mt-4 pr-md-3" src = "Images/Speaker_No_1.jpg" />
-                <div class = "speaker-about text-center text-white pt-4">
+                <img class = "rounded w-100 h-75 mt-4 pr-md-3" src = "Images/Speaker_No_1.jpg" data-aos = "fade-up"/>
+                <div class = "speaker-about text-center text-white pt-4" data-aos = "fade-up">
                     <h5>
                         JESSICA BROWN
                     </h5>
@@ -237,9 +240,9 @@
                 </div>
             </div>
 
-            <div class = "speaker-2">
-                <img class = "rounded w-100 h-75 mt-4 pl-md-3" src = "Images/Speaker_No_2.jpg" />
-                <div class = "speaker-about text-center text-white pt-4">
+            <div class = "speaker-2"> 
+                <img class = "rounded w-100 h-75 mt-4 pl-md-3" src = "Images/Speaker_No_2.jpg" data-aos = "fade-up"/>
+                <div class = "speaker-about text-center text-white pt-4" data-aos = "fade-up">
                     <h5>
                         JESSICA BROWN
                     </h5>
@@ -256,11 +259,11 @@
     <!--Four Section-->
     <div class = "four mt-5 pl-4 pr-4" id = "four">
 
-        <h4 class = "text-center">
+        <h4 class = "text-center" data-aos = "fade-up">
             Event Schedule
         </h4>
 
-        <div class = "row bg-light mt-5 rounded mb-3 justify-content-around">
+        <div class = "row bg-light mt-5 rounded mb-3 justify-content-around" data-aos = "fade-up">
             <div class = "col-5 p-3 text-center text-white event-schedule-day my-background-color m-2 day-title" id = "day-1-title" onclick = "show_event_schedule('1')">
                 Day 1
             </div>
@@ -269,7 +272,7 @@
             </div>
         </div>
 
-        <div class = "mt-5 pl-2 pr-2">
+        <div class = "mt-5 pl-2 pr-2" data-aos = "fade-up">
             
             <div class = "single-day-schedule" id = "day-1">
 
@@ -294,7 +297,7 @@
             
         </div>
 
-         <div class = "single-day-schedule d-none" id = "day-2">
+         <div class = "single-day-schedule d-none" id = "day-2" data-aos = "fade-up">
 
                 <div class = "single-interval border-bottom mb-4 mb-md-5 pl-2">
                     <h6 class = "my-text-color font-weight-bolder">
@@ -352,6 +355,11 @@
             $(".day-title").addClass("my-text-color");
             $("#day-"+n+"-title").addClass("my-background-color text-white");
         }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>
